@@ -23,7 +23,7 @@ jobs:
     - name: Deploy to EC2
       run: |
         ssh ubuntu@3.83.1.103 "
-          cd /var/www/laravel &&
+          cd /var/www/html/example-app &&
           git pull origin master &&
           composer install --no-dev --optimize-autoloader &&
           php artisan migrate --force &&
