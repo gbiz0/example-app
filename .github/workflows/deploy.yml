@@ -24,7 +24,7 @@ jobs:
       run: |
         ssh ubuntu@54.175.168.39 "
           cd /var/www/laravel &&
-          git pull origin main &&
+          git pull origin master &&
           composer install --no-dev --optimize-autoloader &&
           php artisan migrate --force &&
           php artisan config:cache &&
